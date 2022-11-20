@@ -370,6 +370,10 @@
         --tw-border-opacity: 1;
         border-color: rgb(var(--color-compose-button-400)/var(--tw-border-opacity));
     }
+    .hover\:text-accent:hover {
+        --tw-text-opacity: 1;
+        color: rgb(var(--color-white)/var(--tw-text-opacity)) !important;
+    }
     .hover\:bg-cherry-600:hover {
         --tw-bg-opacity: 1;
         background-color: rgb(var(--color-compose-button-400)/var(--tw-bg-opacity));
