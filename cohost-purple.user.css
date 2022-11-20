@@ -49,8 +49,6 @@
         /* ^ sidebar colors */
         --color-highlight: 245 245 255;
         /* ^ mouseover highlight color for notifications page */
-        --color-shadow: 35 23 45;
-        /* ^ blurry backdrop color for image preview and new post popup */
     }
     /* "report a bug" widget */
     .gQnPtz:hover {
@@ -115,8 +113,8 @@
         --tw-prose-invert-th-borders: rgb(var(--color-notBlack));
         --tw-prose-invert-td-borders: rgb(var(--color-notBlack));
     }
+    /* profile sidebar text */
     .prose-stone {
-        /* profile sidebar text */
         color: rgb(var(--color-notWhite)/var(--tw-text-opacity));
     }
     /* edit profile button */
@@ -206,9 +204,6 @@
     .bg-opacity-80 {
         --tw-bg-opacity: 0.8;
     }
-    .bg-notBlack {
-        background-color: rgb(var(--color-shadow)/var(--tw-bg-opacity)) !important;
-    }
     .bg-notBlack,
     .hover\:bg-notBlack:hover {
         background-color: rgb(var(--color-notBlack)/var(--tw-bg-opacity));
@@ -242,6 +237,9 @@
     /* search field */
     [type=text] {
         background-color: white;
+    }
+    .text-text {
+        color: rgb(var(--color-notWhite)/var(--tw-text-opacity)) !important;
     }
     .text-white {
         color: rgb(var(--color-white)/var(--tw-text-opacity));
@@ -295,6 +293,10 @@
     [type="submit"] {
         color: rgb(var(--color-notWhite)/var(--tw-text-opacity));
     }
+    /* page selector button on new post */
+    #headlessui-listbox-button-\:R1kllabq\: {
+        color: rgb(var(--color-notBlack)/var(--tw-text-opacity));
+    }
     .border-mango {
         border-color: rgb(var(--color-notWhite)/var(--tw-border-opacity));
     }
@@ -315,7 +317,7 @@
         background-color: rgb(var(--color-longan-300)/var(--tw-bg-opacity));
     }
     .bg-mango-100 {
-        background-color: rgb(var(--color-mango-100)/var(--tw-bg-opacity));
+        background-color: rgb(var(--color-notWhite)/var(--tw-bg-opacity));
     }
     .bg-longan {
         background-color: rgb(var(--color-longan-300)/var(--tw-bg-opacity));
@@ -377,7 +379,7 @@
         background-color: rgb(var(--color-black)/var(--tw-bg-opacity));
     }
     article footer [aria-selected="true"] {
-        color: rgb(var(--color-white)/var(--tw-text-opacity));
+        color: rgb(var(--color-white)/var(--tw-text-opacity)) !important;
         background-color: rgb(var(--color-compose-button-600));
     }
     article footer [aria-selected="false"] {
@@ -395,9 +397,11 @@
         border-color: rgb(var(--color-compose-button-400)/var(--tw-divide-opacity));
     }
     .hover\:bg-composeButton-600:hover {
+        color: rgb(var(--color-notWhite)/var(--tw-text-opacity)) !important;
         background-color: rgb(var(--color-black)/var(--tw-bg-opacity));
     }
     .hover\:bg-foreground-600:hover {
+        color: rgb(var(--color-notWhite)/var(--tw-text-opacity)) !important;
         background-color: rgb(var(--color-black)/var(--tw-bg-opacity));
     }
     .hover\:text-composeButton:hover {
