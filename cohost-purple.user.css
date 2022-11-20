@@ -21,7 +21,7 @@
         /* ^ original 255 216 168 */
         --color-white: 240 235 255;
         /* ^ original 255 255 255. it's white */
-        --color-black: 45 25 75;
+        --color-black: 30 20 60;
         /* ^ original 69420 666 66 jk its black. 0 0 0 */
         /* and more */
         --color-compose-button-600: 110 75 160;
@@ -203,6 +203,10 @@
     }
     .bg-opacity-80 {
         --tw-bg-opacity: 0.8;
+    }
+    #lightbox-container .container img.border-cherry {
+        box-sizing: border-box;
+        border-color: rgb(var(--color-mango-100)/var(--tw-bg-opacity));
     }
     .bg-notBlack,
     .hover\:bg-notBlack:hover {
