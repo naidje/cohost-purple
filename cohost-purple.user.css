@@ -1,0 +1,387 @@
+/* ==UserStyle==
+@name           cohost purple
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A purple userstyle for cohost.org
+@author         naidje
+==/UserStyle== */
+@-moz-document domain("cohost.org") {
+    :root {
+        --color-notWhite: 199 182 233;
+        /* ^ original 255 249 242 */
+        --color-notBlack: 75 35 125;
+        /* ^ original 25 25 25 */
+        --color-cherry: 75 35 125;
+        /* ^ original 131 37 79 */
+        --color-strawberry: 75 35 125;
+        /* ^ original 229 107 111 */
+        --color-mango: 240 235 255;
+        /* ^ original 255 171 92 */
+        --color-longan: 140 94 209;
+        /* ^ original 255 216 168 */
+        --color-white: 240 235 255;
+        /* ^ original 255 255 255. it's white */
+        --color-black: 45 25 75;
+        /* ^ original 69420 666 66 jk its black. 0 0 0 */
+        /* and more */
+        --color-compose-button-600: 110 75 160;
+        --color-compose-button-400: 135 100 200;
+        /* ^ the line inbetween 'post now' and the carat */
+        --color-mango-100: 160 128 208;
+        /* ^ used for some smaller backgrounds */
+        --color-longan-100: 240 235 255;
+        /* ^ used for some smaller backgrounds */
+        --color-longan-300: 160 128 208;
+        /* ^ used for some button backgrounds */
+        --color-gray-300: 240 235 255;
+        /* ^ used for some separators */
+        --color-gray-400: 240 235 255;
+        /* ^ used for comments link under posts */
+        --color-gray-500: 160 128 208;
+        /* ^ used for timestamps and tags */
+        --color-gray-600: 160 128 208;
+        /* ^ used for user @ links */
+        --color-gray-800: 45 25 75;
+        /* ^ used for embed links */
+        --color-sidebar-bg: 240 235 255;
+        --color-sidebar-text: 75 35 125;
+        --color-sidebar-accent: 75 35 125;
+        /* ^ sidebar colors */
+        --color-highlight: 245 245 255;
+        /* ^ mouseover highlight color for notifications page */
+    }
+    /* "report a bug" widget */
+    .gQnPtz:hover {
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px;
+        transform: scale(1.04);
+        transition: all 0.5s linear 0s;
+        background: rgb(var(--color-longan-300)) radial-gradient(circle, transparent 1%, rgb(var(--color-longan-300)) 1%) center center / 15000%;
+    }
+    .gQnPtz {
+        color: rgb(var(--color-notBlack));
+        background: rgb(var(--color-longan-300));
+    }
+    .dcxZoa {
+        height: 184px;
+        position: relative;
+        background: rgb(var(--color-longan-300)) 0% 0% / contain;
+        color: rgb(var(--color-notBlack));
+    }
+    .jfbagZ {
+        border-radius: 8px;
+        padding: 9px 18px 12px;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px 0px;
+        background: rgb(var(--color-longan-300));
+    }
+    .jfbagZ:hover {
+        background: rgb(var(--color-longan-300));
+    }
+    /* various types of text */
+    .text-notBlack,
+    .prose,
+    .prose-stone {
+        color: rgb(var(--color-notBlack)/var(--tw-text-opacity));
+        --tw-prose-headings: rgb(var(--color-notBlack));
+        --tw-prose-bold: rgb(var(--color-notBlack));
+        --tw-prose-quotes: rgb(var(--color-notBlack));
+        --tw-prose-quote-borders: rgb(var(--color-notWhite));
+        --tw-prose-bullets: rgb(var(--color-notBlack));
+        --tw-prose-counters: rgb(var(--color-notBlack));
+        --tw-prose-hr: rgb(var(--color-gray-300));
+        --tw-prose-captions: rgb(var(--color-notBlack));
+        --tw-prose-body: rgb(var(--color-notBlack));
+        --tw-prose-lead: rgb(var(--color-notBlack));
+        --tw-prose-links: rgb(var(--color-notBlack));
+        --tw-prose-code: rgb(var(--color-notBlack));
+        --tw-prose-pre-code: rgb(var(--color-white));
+        --tw-prose-pre-bg: rgb(var(--color-notBlack));
+        --tw-prose-th-borders: rgb(var(--color-white));
+        --tw-prose-td-borders: rgb(var(--color-white));
+        --tw-prose-invert-body: rgb(var(--color-white));
+        --tw-prose-invert-headings: rgb(var(--color-white));
+        --tw-prose-invert-lead: rgb(var(--color-notWhite));
+        --tw-prose-invert-links: rgb(var(--color-white));
+        --tw-prose-invert-bold: rgb(var(--color-white));
+        --tw-prose-invert-counters: rgb(var(--color-notWhite));
+        --tw-prose-invert-hr: rgb(var(--color-notBlack));
+        --tw-prose-invert-quotes: rgb(var(--color-white));
+        --tw-prose-invert-quote-borders: rgb(var(--color-notBlack));
+        --tw-prose-invert-captions: rgb(var(--color-notWhite));
+        --tw-prose-invert-code: rgb(var(--color-white));
+        --tw-prose-invert-pre-code: rgb(var(--color-notWhite));
+        --tw-prose-invert-pre-bg: rgb(0 0 0 / 50%);
+        --tw-prose-invert-th-borders: rgb(var(--color-notBlack));
+        --tw-prose-invert-td-borders: rgb(var(--color-notBlack));
+    }
+    .prose-stone {
+        /* profile sidebar text */
+        color: rgb(var(--color-notWhite)/var(--tw-text-opacity));
+    }
+    /* edit profile button */
+    .border-accent {
+        --tw-border-opacity: 1;
+        border-color: rgb(var(--color-white)/var(--tw-border-opacity)) !important;
+    }
+    .hover\:text-text:hover {
+        --tw-text-opacity: 1;
+        color: rgb(var(--color-notBlack)/var(--tw-text-opacity));
+    }
+    /* markdown page text */
+    .bg-notWhite,
+    .px-3 {
+        color: rgb(var(--color-notBlack)/var(--tw-text-opacity));
+    }
+    /* the rest of it */
+    div[data-post-preview] hr:first-of-type::after {
+        background-color: rgb(var(--color-white)/var(--tw-bg-opacity));
+        color: rgb(var(--color-gray-800)/var(--tw-text-opacity));
+    }
+    /* post header */
+    .bg-notWhite,
+    input[type=checkbox],
+    .kp {
+        background-color: rgb(var(--color-white)/var(--tw-bg-opacity));
+    }
+    /* post seperators */
+    article header {
+        border-bottom: 0px solid rgba(0, 0, 0, 0.13);
+    }
+    article > div {
+        border-top: 1px solid rgba(0, 0, 0, 0.13);
+    }
+    /* post footer bg */
+    .mr-2 {
+        color: rgb(var(--color-gray-500)/var(--tw-text-opacity)) !important;
+    }
+    article footer {
+        border-top: 1px solid rgba(0, 0, 0, 0.13);
+        background-color: rgb(var(--color-notBlack)/var(--tw-bg-opacity)) !important;
+    }
+    /* transparency for footer buttons */
+    article footer div div.justify-end {
+        background-color: transparent;
+    }
+    /* footer button default color */
+    article footer div div.justify-end svg,
+    article footer div div.gap-1 svg {
+        color: rgb(var(--color-white)/var(--tw-bg-opacity));
+    }
+    /* footer button hover color */
+    article footer div div.justify-end svg:hover,
+    article footer div div.gap-1 svg:hover {
+        color: rgb(var(--color-notWhite)/var(--tw-bg-opacity));
+    }
+    /* footer button active color */
+    article footer div div.justify-end svg.text-cherry {
+        color: rgb(var(--color-notWhite)/var(--tw-bg-opacity));
+    }
+    input[type=checkbox] {
+        color: rgb(var(--color-notBlack)/var(--tw-text-opacity));
+    }
+    .text-notWhite,
+    .hover\:text-notWhite:hover {
+        color: rgb(var(--color-notWhite)/var(--tw-text-opacity));
+    }
+    .kbp {
+        color: rgb(var(--color-notWhite));
+        background-color: rgb(var(--color-cherry));
+    }
+    .kbs {
+        color: rgb(var(--color-gray-800));
+        background: rgb(var(--color-gray-300));
+    }
+    a.kb.kbl,
+    a.tw._f1m {
+        color: rgb(var(--color-gray-800));
+    }
+    .bg-notBlack,
+    .hover\:bg-notBlack:hover {
+        background-color: rgb(var(--color-notBlack)/var(--tw-bg-opacity));
+    }
+    .border-notBlack {
+        border-color: rgb(var(--color-notBlack)/var(--tw-border-opacity));
+    }
+    .bg-notBlack,
+    .hover\:bg-notBlack:hover {
+        background-color: rgb(var(--color-black)/var(--tw-bg-opacity));
+    }
+    .bg-white,
+    [type=text],
+    [type=email],
+    [type=url],
+    [type=password],
+    [type=number],
+    [type=date],
+    [type=datetime-local],
+    [type=month],
+    [type=search],
+    [type=tel],
+    [type=time],
+    [type=week],
+    [multiple],
+    textarea,
+    select {
+        background-color: rgb(var(--color-white)/var(--tw-bg-opacity));
+        color: rgb(var(--color-notBlack)/var(--tw-text-opacity));
+    }
+    /* search field */
+    [type=text] {
+        background-color: white;
+    }
+    .text-white {
+        color: rgb(var(--color-white)/var(--tw-text-opacity));
+    }
+    .text-black,
+    .text-cherry-900 {
+        color: rgb(var(--color-notBlack)/var(--tw-text-opacity));
+    }
+    .kp .th,
+    .kp .kd {
+        color: rgb(var(--color-black))
+    }
+    .border-gray-300 {
+        border-color: rgb(var(--color-gray-300)/var(--tw-text-opacity));
+    }
+    .text-gray-400 {
+        color: rgb(var(--color-gray-400)/var(--tw-text-opacity));
+    }
+    .text-gray-500 {
+        color: rgb(var(--color-gray-500)/var(--tw-text-opacity));
+    }
+    .text-gray-600 {
+        color: rgb(var(--color-gray-600)/var(--tw-text-opacity));
+    }
+    .text-gray-800 {
+        color: rgb(var(--color-gray-800)/var(--tw-text-opacity));
+    }
+    .placeholder-gray-500::placeholder {
+        --tw-placeholder-opacity: 1;
+        color: rgb(199 182 233/var(--tw-placeholder-opacity));
+    }
+    .placeholder\:text-gray-700::placeholder {
+        --tw-text-opacity: 1;
+        color: rgb(199 182 233/var(--tw-text-opacity));
+    }
+    .divide-gray-300 > :not([hidden]) ~ :not([hidden]) {
+        border-color: rgb(var(--color-notWhite)/var(--tw-bg-opacity));
+    }
+    .border-longan {
+        border-color: rgb(var(--color-notWhite)/var(--tw-bg-opacity));
+    }
+    /* post button border */
+    .border-2 {
+        border-width: 2px;
+        border-color: rgb(var(--color-black)/var(--tw-border-opacity));
+    }
+    /* sign out link */
+    button,
+    [type="button"],
+    [type="reset"],
+    [type="submit"] {
+        color: rgb(var(--color-notWhite)/var(--tw-text-opacity));
+    }
+    .border-mango {
+        border-color: rgb(var(--color-notWhite)/var(--tw-border-opacity));
+    }
+    .border-cherry {
+        border-color: rgb(var(--color-cherry)/var(--tw-border-opacity));
+    }
+    .text-mango {
+        --tw-text-opacity: 1;
+        color: rgb(var(--color-notWhite)/var(--tw-text-opacity));
+    }
+    .text-strawberry {
+        color: rgb(var(--color-cherry)/var(--tw-text-opacity));
+    }
+    .text-cherry {
+        color: rgb(var(--color-cherry)/var(--tw-text-opacity));
+    }
+    .bg-strawberry-100 {
+        background-color: rgb(var(--color-longan-300)/var(--tw-bg-opacity));
+    }
+    .bg-mango-100 {
+        background-color: rgb(var(--color-mango-100)/var(--tw-bg-opacity));
+    }
+    .bg-longan {
+        background-color: rgb(var(--color-longan-300)/var(--tw-bg-opacity));
+    }
+    .bg-longan-100 {
+        background-color: rgb(var(--color-longan-100)/var(--tw-bg-opacity));
+    }
+    .bg-longan-300 {
+        background-color: rgb(var(--color-longan-300)/var(--tw-bg-opacity));
+    }
+    .hover\:bg-mango:hover {
+        background-color: rgb(var(--color-notWhite)/var(--tw-bg-opacity));
+    }
+    .hover\:text-notBlack:hover {
+        --tw-text-opacity: 1;
+        color: rgb(var(--color-black)/var(--tw-text-opacity));
+    }
+    .hover\:bg-gray-200:hover {
+        background-color: rgb(var(--color-highlight)/var(--tw-bg-opacity));
+    }
+    /* new post indicator */
+    .fill-cherry {
+        fill: rgb(var(--color-notBlack)/var(--tw-bg-opacity));
+    }
+    /* comment section discard and submit buttons */
+    .bg-strawberry-100 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--color-notWhite)/var(--tw-bg-opacity));
+    }
+    .text-strawberry {
+        --tw-text-opacity: 1;
+        color: rgb(var(--color-notBlack)/var(--tw-text-opacity));
+    }
+    .bg-cherry {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--color-notBlack)/var(--tw-bg-opacity));
+    }
+    .border-cherry {
+        --tw-border-opacity: 1;
+        border-color: rgb(var(--color-compose-button-400)/var(--tw-border-opacity));
+    }
+    .hover\:bg-cherry-600:hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--color-compose-button-400)/var(--tw-bg-opacity));
+    }
+    .disabled\:bg-cherry-200:disabled {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--color-mango-100)/var(--tw-bg-opacity));
+    }
+    .hover\:fill-text:hover {
+        fill: rgb(var(--color-compose-button-400));
+    }
+    /* Compose/Preview buttons */
+    article footer div[role=tablist] {
+        background-color: rgb(var(--color-black)/var(--tw-bg-opacity));
+    }
+    article footer [aria-selected="true"] {
+        color: rgb(var(--color-white)/var(--tw-text-opacity));
+        background-color: rgb(var(--color-compose-button-600));
+    }
+    article footer [aria-selected="false"] {
+        --tw-text-opacity: 0.7;
+        color: rgb(var(--color-longan-300)/var(--tw-text-opacity));
+    }
+    article footer .bg-composeButton {
+        color: rgb(var(--color-white)/var(--tw-text-opacity));
+        background-color: rgb(var(--color-compose-button-600));
+    }
+    .border-r-composeButton-400 {
+        border-right-color: rgb(var(--color-compose-button-400)/var(--tw-border-opacity));
+    }
+    .divide-foreground-400 > :not([hidden]) ~ :not([hidden]) {
+        border-color: rgb(var(--color-compose-button-400)/var(--tw-divide-opacity));
+    }
+    .hover\:bg-composeButton-600:hover {
+        background-color: rgb(var(--color-black)/var(--tw-bg-opacity));
+    }
+    .hover\:bg-foreground-600:hover {
+        background-color: rgb(var(--color-black)/var(--tw-bg-opacity));
+    }
+    .hover\:text-composeButton:hover {
+        fill: rgb(var(--color-compose-button-400)/var(--tw-text-opacity));
+    }
+}
