@@ -238,6 +238,9 @@
     [type=text] {
         background-color: white;
     }
+    #emoji-mart-search-1 {
+        background-color: white;
+    }
     .text-text {
         color: rgb(var(--color-notWhite)/var(--tw-text-opacity)) !important;
     }
