@@ -49,6 +49,8 @@
         /* ^ sidebar colors */
         --color-highlight: 245 245 255;
         /* ^ mouseover highlight color for notifications page */
+        --color-shadow: 35 23 45;
+        /* ^ blurry backdrop color for image preview and new post popup */
     }
     /* "report a bug" widget */
     .gQnPtz:hover {
@@ -197,6 +199,15 @@
     a.kb.kbl,
     a.tw._f1m {
         color: rgb(var(--color-gray-800));
+    }
+    .bg-opacity-90 {
+        --tw-bg-opacity: 0.9;
+    }
+    .bg-opacity-80 {
+        --tw-bg-opacity: 0.8;
+    }
+    .bg-notBlack {
+        background-color: rgb(var(--color-shadow)/var(--tw-bg-opacity)) !important;
     }
     .bg-notBlack,
     .hover\:bg-notBlack:hover {
