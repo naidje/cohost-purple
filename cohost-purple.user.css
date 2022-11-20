@@ -315,6 +315,10 @@
     .bg-longan-300 {
         background-color: rgb(var(--color-longan-300)/var(--tw-bg-opacity));
     }
+    .hover\:bg-secondary-600:hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--color-compose-button-600)/var(--tw-bg-opacity));
+    }
     .hover\:bg-mango:hover {
         background-color: rgb(var(--color-notWhite)/var(--tw-bg-opacity));
     }
