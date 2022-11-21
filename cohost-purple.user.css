@@ -385,6 +385,10 @@
     .hover\:fill-text:hover {
         fill: rgb(var(--color-compose-button-400));
     }
+    .hover\:bg-foreground-700:hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--color-black)/var(--tw-bg-opacity));
+    }
     /* Compose/Preview buttons */
     article footer div[role=tablist] {
         background-color: rgb(var(--color-black)/var(--tw-bg-opacity));
