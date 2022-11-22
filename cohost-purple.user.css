@@ -87,7 +87,7 @@
         --tw-prose-quote-borders: rgb(var(--color-notWhite));
         --tw-prose-bullets: rgb(var(--color-notBlack));
         --tw-prose-counters: rgb(var(--color-notBlack));
-        --tw-prose-hr: rgb(var(--color-gray-300));
+        --tw-prose-hr: rgb(var(--color-notWhite));
         --tw-prose-captions: rgb(var(--color-notBlack));
         --tw-prose-body: rgb(var(--color-notBlack));
         --tw-prose-lead: rgb(var(--color-notBlack));
@@ -131,7 +131,7 @@
     .px-3 {
         color: rgb(var(--color-notBlack)/var(--tw-text-opacity));
     }
-    button.header-page-control{
+    button.header-page-control {
         color: rgb(var(--color-notBlack)/var(--tw-text-opacity));
     }
     /* the rest of it */
