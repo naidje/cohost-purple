@@ -131,6 +131,9 @@
     .px-3 {
         color: rgb(var(--color-notBlack)/var(--tw-text-opacity));
     }
+    button.header-page-control{
+        color: rgb(var(--color-notBlack)/var(--tw-text-opacity));
+    }
     /* the rest of it */
     div[data-post-preview] hr:first-of-type::after {
         background-color: rgb(var(--color-white)/var(--tw-bg-opacity));
