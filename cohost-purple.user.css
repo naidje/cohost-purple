@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           cohost purple
 @namespace      github.com/openstyles/stylus
-@version        1.1.0
+@version        1.1.1
 @description    A purple userstyle for cohost.org
 @author         naidje
 ==/UserStyle== */
@@ -292,17 +292,47 @@
     .border-longan {
         border-color: rgb(var(--color-notWhite)/var(--tw-bg-opacity));
     }
-    /* post button border */
-    .border-2 {
-        border-width: 2px;
-        border-color: rgb(var(--color-black)/var(--tw-border-opacity));
-    }
-    /* sign out link */
+    /* sign out button */
     button,
     [type="button"],
     [type="reset"],
     [type="submit"] {
-        color: rgb(var(--color-notWhite)/var(--tw-text-opacity));
+        color: rgb(var(--color-white)/var(--tw-text-opacity));
+    }
+    .hover\:text-cherry:hover {
+        --tw-text-opacity: 1;
+        color: rgb(var(--color-notBlack)/var(--tw-text-opacity));
+    }
+    .hover\:bg-notWhite:hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--color-white)/var(--tw-bg-opacity));
+    }
+    .border-notWhite {
+        --tw-border-opacity: 1;
+        border-color: rgb(var(--color-white)/var(--tw-border-opacity));
+    }
+    /* page selector in top bar */
+    button[id^="headlessui-listbox-button-:"] {
+        color: rgb(var(--color-white)/var(--tw-text-opacity)) !important;
+    }
+    .group:hover .group-hover\:bg-cherry-600 {
+        --tw-bg-opacity: 0.5;
+        background-color: rgb(var(--color-black)/var(--tw-bg-opacity));
+    }
+    :where([data-headlessui-state~="open"]) .ui-open\:bg-cherry-700 {
+        --tw-bg-opacity: 0.5;
+        background-color: rgb(var(--color-black)/var(--tw-bg-opacity));
+    }
+    .ui-open\:rotate-180 {
+        color: rgb(var(--color-white)/var(--tw-text-opacity));
+    }
+    .hover\:text-cherry-800:hover {
+        --tw-text-opacity: 1;
+        color: rgb(var(--color-notBlack)/var(--tw-text-opacity));
+    }
+    .hover\:bg-cherry-100:hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--color-notWhite)/var(--tw-bg-opacity));
     }
     /* page selector button on new post */
     button[id^="headlessui-listbox-button-\:"] {
@@ -338,6 +368,10 @@
     }
     .bg-longan-300 {
         background-color: rgb(var(--color-longan-300)/var(--tw-bg-opacity));
+    }
+    .bg-foreground {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--color-notBlack)/var(--tw-bg-opacity));
     }
     .hover\:bg-secondary-600:hover {
         --tw-bg-opacity: 1;
@@ -411,7 +445,7 @@
         border-color: rgb(var(--color-notBlack)/var(--tw-border-opacity));
     }
     .focus\:outline-cherry:focus {
-        --tw-outline-opacity: 0;
+        --tw-outline-opacity: 1;
         outline-color: rgb(var(--color-notBlack)/var(--tw-outline-opacity));
     }
     /* Compose/Preview buttons */
