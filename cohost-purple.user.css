@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           cohost purple
 @namespace      github.com/openstyles/stylus
-@version        1.0.0
+@version        1.1.0
 @description    A purple userstyle for cohost.org
 @author         naidje
 ==/UserStyle== */
@@ -13,7 +13,7 @@
         /* ^ original 25 25 25 */
         --color-cherry: 75 35 125;
         /* ^ original 131 37 79 */
-        --color-strawberry: 75 35 125;
+        --color-strawberry: 115 80 160;
         /* ^ original 229 107 111 */
         --color-mango: 240 235 255;
         /* ^ original 255 171 92 */
@@ -24,7 +24,7 @@
         --color-black: 30 20 60;
         /* ^ original 69420 666 66 jk its black. 0 0 0 */
         /* and more */
-        --color-compose-button-600: 110 75 160;
+        --color-compose-button-600: 115 80 160;
         --color-compose-button-400: 135 100 200;
         /* ^ the line inbetween 'post now' and the carat */
         --color-mango-100: 160 130 210;
@@ -160,6 +160,10 @@
     article footer {
         border-top: 1px solid rgba(0, 0, 0, 0.13);
         background-color: rgb(var(--color-notBlack)/var(--tw-bg-opacity)) !important;
+    }
+    .rounded-b-lg {
+        border-bottom-right-radius: 0.35rem;
+        border-bottom-left-radius: 0.35rem;
     }
     /* transparency for footer buttons */
     article footer div div.justify-end {
@@ -301,7 +305,7 @@
         color: rgb(var(--color-notWhite)/var(--tw-text-opacity));
     }
     /* page selector button on new post */
-    #headlessui-listbox-button-\:R1kllabq\: {
+    button[id^="headlessui-listbox-button-\:"] {
         color: rgb(var(--color-notBlack)/var(--tw-text-opacity));
     }
     .border-mango {
