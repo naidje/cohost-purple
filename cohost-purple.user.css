@@ -295,6 +295,23 @@
     .border-longan {
         border-color: rgb(var(--color-notWhite)/var(--tw-bg-opacity));
     }
+    button.gap-2 {
+        color: rgb(var(--color-notBlack)/var(--tw-text-opacity));
+    }
+    /* 18+ and CW boxes */
+    a[href="https://help.antisoftware.club/a/solutions/articles/62000225024"].text-cherry {
+        --tw-bg-opacity: 1;
+        border-width: 1px;
+        background-color: rgb(var(--color-white)/var(--tw-bg-opacity));
+        border-color: rgb(var(--color-notBlack)/var(--tw-text-opacity));
+        color: rgb(var(--color-cherry)/var(--tw-text-opacity));
+    }
+    .box-border.flex.flex-row.items-center.gap-3.border-\[1px\].border-gray-300 {
+        --tw-bg-opacity: 1;
+        border-width: 1px;
+        border-color: rgb(var(--color-notBlack)/var(--tw-text-opacity));
+        color: rgb(var(--color-cherry)/var(--tw-text-opacity));
+    }
     /* sign out button */
     button,
     [type="button"],
@@ -315,7 +332,7 @@
         border-color: rgb(var(--color-white)/var(--tw-border-opacity));
     }
     /* page selector in top bar */
-    button[id^="headlessui-listbox-button-:"] {
+    button[id^="headlessui-listbox-button-\:Rcl4\:"] {
         color: rgb(var(--color-white)/var(--tw-text-opacity)) !important;
     }
     .group:hover .group-hover\:bg-cherry-600 {
