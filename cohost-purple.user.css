@@ -113,6 +113,17 @@
         --tw-prose-invert-th-borders: rgb(var(--color-notBlack));
         --tw-prose-invert-td-borders: rgb(var(--color-notBlack));
     }
+    .hover\:bg-red:hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--color-black)/var(--tw-bg-opacity));
+    }
+    .border-red {
+        --tw-border-opacity: 1;
+        border-color: rgb(var(--color-notBlack)/var(--tw-bg-opacity));
+    }
+    .hover\:fill-cherry-700:hover {
+        fill: rgb(var(--color-black)/var(--tw-bg-opacity));
+    }
     /* profile sidebar text */
     .prose-stone {
         color: rgb(var(--color-notWhite)/var(--tw-text-opacity));
