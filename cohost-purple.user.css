@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           cohost purple
 @namespace      github.com/openstyles/stylus
-@version        1.1.1
+@version        1.1.2
 @description    A purple userstyle for cohost.org
 @author         naidje
 ==/UserStyle== */
@@ -23,6 +23,8 @@
         /* ^ original 255 255 255. it's white */
         --color-black: 30 20 60;
         /* ^ original 69420 666 66 jk its black. 0 0 0 */
+        --color-green: 50 210 120;
+        --color-red: 190 100 200;
         /* and more */
         --color-compose-button-600: 115 80 160;
         --color-compose-button-400: 135 100 200;
@@ -195,7 +197,7 @@
     }
     /* footer button active color */
     article footer div div.justify-end svg.text-cherry {
-        color: rgb(var(--color-notWhite)/var(--tw-bg-opacity));
+        color: rgb(var(--color-red)/var(--tw-bg-opacity));
     }
     input[type=checkbox] {
         color: rgb(var(--color-notBlack)/var(--tw-text-opacity));
@@ -292,6 +294,14 @@
     .text-gray-800 {
         color: rgb(var(--color-gray-800)/var(--tw-text-opacity));
     }
+    .text-green {
+        --tw-text-opacity: 1;
+        color: rgb(var(--color-green)/var(--tw-text-opacity)) !important;
+    }
+    .text-foreground-200 {
+        --tw-text-opacity: 1;
+        color: rgb(var(--color-longan-300)/var(--tw-text-opacity));
+    }
     .placeholder-gray-500::placeholder {
         --tw-placeholder-opacity: 1;
         color: rgb(199 182 233/var(--tw-placeholder-opacity));
@@ -323,6 +333,82 @@
         border-color: rgb(var(--color-notBlack)/var(--tw-text-opacity));
         color: rgb(var(--color-cherry)/var(--tw-text-opacity));
     }
+    /* mobile stuff */
+    @media (min-width: 1024px) {
+        .fill-sidebarAccent {
+            fill: rgb(var(--color-sidebar-accent)) !important;
+        }
+    }
+    .fill-sidebarAccent {
+        fill: rgb(var(--color-compose-button-600));
+    }
+    @media (min-width: 1024px) {
+        .text-sidebarBg {
+            --tw-text-opacity: 1;
+            color: rgb(var(--color-sidebar-bg)/var(--tw-text-opacity)) !important;
+        }
+    }
+    .text-sidebarBg {
+        --tw-text-opacity: 1;
+        color: rgb(var(--color-white)/var(--tw-text-opacity));
+    }
+    .divide-cherry > :not([hidden]) ~ :not([hidden]) {
+        --tw-divide-opacity: 1;
+        border-color: rgb(var(--color-compose-button-600)/var(--tw-divide-opacity));
+    }
+    .divide-cherry-500 > :not([hidden]) ~ :not([hidden]) {
+        --tw-divide-opacity: 1;
+        border-color: rgb(var(--color-compose-button-600)/var(--tw-divide-opacity));
+    }
+    @media (min-width: 1024px) {
+        .hover\:border-mango:hover {
+            --tw-border-opacity: 1;
+            border-color: rgb(var(--color-notBlack)/var(--tw-border-opacity)) !important;
+        }
+    }
+    @media (min-width: 1024px) {
+        .hover\:text-mango:hover {
+            --tw-text-opacity: 1;
+            color: rgb(var(--color-notBlack)/var(--tw-text-opacity)) !important;
+        }
+    }
+    .hover\:border-mango:hover {
+        --tw-border-opacity: 1;
+        border-color: rgb(var(--color-white)/var(--tw-border-opacity));
+    }
+    .hover\:text-mango:hover {
+        --tw-text-opacity: 1;
+        color: rgb(var(--color-white)/var(--tw-text-opacity));
+    }
+    .bg-mango {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--color-longan-300)/var(--tw-bg-opacity));
+    }
+    @media (min-width: 1024px) {
+        svg.cohost-shadow-light:nth-child(2) {
+            --tw-bg-opacity: 1 !important;
+            fill: rgb(var(--color-notBlack)/var(--tw-bg-opacity)) !important;
+        }
+    }
+    @media (min-width: 1024px) {
+        svg.cohost-shadow-light:nth-child(2) > g:nth-child(2) > svg:nth-child(1) > path:nth-child(1) {
+            --tw-text-opacity: 1 !important;
+            color: rgb(var(--color-white)/var(--tw-text-opacity)) !important;
+        }
+    }
+    svg.cohost-shadow-light:nth-child(2) {
+        --tw-bg-opacity: 1;
+        fill: rgb(var(--color-compose-button-600)/var(--tw-bg-opacity));
+    }
+    svg.cohost-shadow-light:nth-child(2) > g:nth-child(2) > svg:nth-child(1) > path:nth-child(1) {
+        --tw-text-opacity: 1;
+        color: rgb(var(--color-white)/var(--tw-text-opacity));
+    }
+    @media (max-width: 767px) {
+        :root {
+            --color-foreground: 75 35 125;
+        }
+    }
     /* sign out button */
     button,
     [type="button"],
@@ -343,7 +429,7 @@
         border-color: rgb(var(--color-white)/var(--tw-border-opacity));
     }
     /* page selector in top bar */
-    button[id^="headlessui-listbox-button-\:Rcl4\:"] {
+    button[id^="headlessui-listbox-button-\:Rqs\:"] {
         color: rgb(var(--color-white)/var(--tw-text-opacity)) !important;
     }
     .group:hover .group-hover\:bg-cherry-600 {
@@ -353,6 +439,21 @@
     :where([data-headlessui-state~="open"]) .ui-open\:bg-cherry-700 {
         --tw-bg-opacity: 0.5;
         background-color: rgb(var(--color-black)/var(--tw-bg-opacity));
+    }
+    @media (min-width: 1024px) {
+        .lg\:text-notBlack {
+            --tw-text-opacity: 1;
+            color: rgb(var(--color-notBlack)/var(--tw-text-opacity));
+        }
+    }
+    @media (min-width: 1024px) {
+        .lg\:bg-notWhite {
+            --tw-bg-opacity: 1;
+            background-color: rgb(var(--color-white)/var(--tw-bg-opacity)) !important;
+        }
+    }
+    .fill-mango {
+        fill: rgb(var(--color-red));
     }
     .ui-open\:rotate-180 {
         color: rgb(var(--color-white)/var(--tw-text-opacity));
@@ -403,6 +504,10 @@
     .bg-foreground {
         --tw-bg-opacity: 1;
         background-color: rgb(var(--color-notBlack)/var(--tw-bg-opacity));
+    }
+    .bg-foreground-800 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--color-black)/var(--tw-bg-opacity));
     }
     .hover\:bg-secondary-600:hover {
         --tw-bg-opacity: 1;
@@ -479,7 +584,7 @@
         --tw-outline-opacity: 1;
         outline-color: rgb(var(--color-notBlack)/var(--tw-outline-opacity));
     }
-    /* Compose/Preview buttons */
+    /* Compose/Preview window */
     article footer div[role=tablist] {
         background-color: rgb(var(--color-black)/var(--tw-bg-opacity));
     }
