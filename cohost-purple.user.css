@@ -52,6 +52,15 @@
         --color-highlight: 245 245 255;
         /* ^ mouseover highlight color for notifications page */
     }
+    /* login button */
+    #login-form .hover\:bg-foreground-600:hover {
+        color: rgb(var(--color-notWhite)/var(--tw-text-opacity));
+        background-color: rgb(var(--color-compose-button-600)/var(--tw-bg-opacity));
+    }
+    #login-form .active\:bg-foreground-700:active {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--color-longan-300)/var(--tw-bg-opacity));
+    }
     /* "report a bug" widget */
     .gQnPtz:hover {
         box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px;
@@ -227,10 +236,6 @@
     #lightbox-container .container img.border-cherry {
         box-sizing: border-box;
         border-color: rgb(var(--color-mango-100)/var(--tw-bg-opacity));
-    }
-    .bg-notBlack,
-    .hover\:bg-notBlack:hover {
-        background-color: rgb(var(--color-notBlack)/var(--tw-bg-opacity));
     }
     .border-notBlack {
         border-color: rgb(var(--color-notBlack)/var(--tw-border-opacity));
