@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           cohost purple
 @namespace      github.com/openstyles/stylus
-@version        1.1.5
+@version        1.1.6
 @description    A purple userstyle for cohost.org
 @author         naidje
 ==/UserStyle== */
@@ -135,7 +135,49 @@
     .hover\:fill-cherry-700:hover {
         fill: rgb(var(--color-black)/var(--tw-bg-opacity));
     }
-    /*notification popover fade */
+    /*notification popover */
+    .conotifs-popover .inner-open {
+        color: rgb(var(--color-notBlack));
+        text-decoration: none;
+    }
+    .conotifs-popover .header-page-control:hover {
+        border-color: rgb(var(--color-notBlack));
+    }
+    .conotifs-popover .inner-popover .inner-contents {
+        flex: 1;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        background: rgb(var(--color-white));
+    }
+    .conotifs-popover .inner-popover .inner-arrow::before {
+        content: '';
+        position: absolute;
+        right: 100%;
+        top: 0;
+        width: 16px;
+        height: 16px;
+        border: 8px solid transparent;
+        border-right-color: transparent;
+        border-right-color: var(--color-longan-300);
+        box-sizing: border-box;
+    }
+    .conotifs-popover .inner-popover .inner-arrow::after {
+        content: '';
+        position: absolute;
+        right: 100%;
+        top: 1px;
+        width: 14px;
+        height: 14px;
+        border: 7px solid transparent;
+        border-right-color: transparent;
+        border-right-color: rgb(var(--color-white));
+        box-sizing: border-box;
+    }
+    .conotifs-popover .inner-popover {
+        color: rgb(var(--color-bg-text));
+        --popover-background: rgb(var(--color-sidebar-bg));
+        --popover-outline: rgb(var(--color-longan-300));
+    }
     .conotifs-popover .inner-grouped-shroud {
         position: absolute;
         pointer-events: none;
