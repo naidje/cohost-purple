@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           cohost purple
 @namespace      github.com/openstyles/stylus
-@version        1.1.2
+@version        1.1.5
 @description    A purple userstyle for cohost.org
 @author         naidje
 ==/UserStyle== */
@@ -134,6 +134,15 @@
     }
     .hover\:fill-cherry-700:hover {
         fill: rgb(var(--color-black)/var(--tw-bg-opacity));
+    }
+    /*notification popover fade */
+    .conotifs-popover .inner-grouped-shroud {
+        position: absolute;
+        pointer-events: none;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient( to right, rgb(var(--color-white)/0.00) 0%, rgb(var(--color-white)/0.04) 10%, rgb(var(--color-white)/0.08) 20%, rgb(var(--color-white)/0.14) 30%, rgb(var(--color-white)/0.24) 40%, rgb(var(--color-white)/0.30) 45%, rgb(var(--color-white)/0.38) 50%, rgb(var(--color-white)/0.45) 55%, rgb(var(--color-white)/0.53) 60%, rgb(var(--color-white)/0.61) 65%, rgb(var(--color-white)/0.70) 70%, rgb(var(--color-white)/0.85) 80%, rgb(var(--color-white)/0.96) 90%, rgb(var(--color-white)/1.00) 100%);
     }
     /* profile sidebar text */
     .prose-stone {
@@ -303,9 +312,17 @@
         --tw-text-opacity: 1;
         color: rgb(var(--color-green)/var(--tw-text-opacity)) !important;
     }
+    .text-foreground {
+        --tw-text-opacity: 1;
+        color: rgb(var(--color-notBlack)/var(--tw-text-opacity)) !important;
+    }
     .text-foreground-200 {
         --tw-text-opacity: 1;
         color: rgb(var(--color-longan-300)/var(--tw-text-opacity));
+    }
+    .disabled\:text-foreground-300:disabled {
+        --tw-text-opacity: 1;
+        color: rgb(var(--color-longan-300)/var(--tw-text-opacity)) !important;
     }
     .placeholder-gray-500::placeholder {
         --tw-placeholder-opacity: 1;
