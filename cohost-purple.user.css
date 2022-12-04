@@ -470,7 +470,7 @@
     }
     @media (max-width: 767px) {
         :root {
-            --color-foreground: 75 35 125;
+            --color-foreground: rgb(var(--color-notBlack));
         }
     }
     /* sign out button */
