@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           cohost purple
 @namespace      github.com/openstyles/stylus
-@version        1.1.6
+@version        1.1.7
 @description    A purple userstyle for cohost.org
 @author         naidje
 ==/UserStyle== */
@@ -470,7 +470,7 @@
     }
     @media (max-width: 767px) {
         :root {
-            --color-foreground: rgb(var(--color-notBlack));
+            --color-foreground: 75 35 125;
         }
     }
     /* sign out button */
@@ -591,7 +591,15 @@
     .fill-cherry {
         fill: rgb(var(--color-notBlack)/var(--tw-bg-opacity));
     }
-    /* comment section discard and submit buttons */
+    /* comment section */
+    article[data-comment-id] > div.flex {
+        --tw-border-opacity: 0.8;
+        border-top: 1px solid rgba(0, 0, 0, 0) !important;
+        border-bottom: 1px solid rgb(var(--color-notWhite)/var(--tw-border-opacity));
+    }
+    .-mr-4 {
+        border-top: 1px solid rgba(0, 0, 0, 0) !important;
+    }
     .bg-strawberry-100 {
         --tw-bg-opacity: 1;
         background-color: rgb(var(--color-notWhite)/var(--tw-bg-opacity));
