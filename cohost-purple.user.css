@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           cohost purple
 @namespace      github.com/openstyles/stylus
-@version        1.1.7
+@version        1.1.8
 @description    A purple userstyle for cohost.org
 @author         naidje
 ==/UserStyle== */
@@ -470,7 +470,7 @@
     }
     @media (max-width: 767px) {
         :root {
-            --color-foreground: 75 35 125;
+            --color-foreground: rgb(var(--color-notBlack));
         }
     }
     /* sign out button */
