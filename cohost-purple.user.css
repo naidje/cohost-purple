@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           cohost purple
 @namespace      github.com/openstyles/stylus
-@version        1.1.8
+@version        1.1.9
 @description    A purple userstyle for cohost.org
 @author         naidje
 ==/UserStyle== */
@@ -136,6 +136,12 @@
         fill: rgb(var(--color-black)/var(--tw-bg-opacity));
     }
     /*notification popover */
+    [id^="headlessui-menu-button-\:"] .ui-open\:rotate-180 {
+        color: rgb(var(--color-notBlack));
+    }
+    .conotifs-popover .inner-grouped-expand-button {
+        color: rgb(var(--color-notBlack));
+    }
     .conotifs-popover .inner-open {
         color: rgb(var(--color-notBlack));
         text-decoration: none;
@@ -593,9 +599,22 @@
     }
     /* comment section */
     article[data-comment-id] > div.flex {
-        --tw-border-opacity: 0.8;
-        border-top: 1px solid rgba(0, 0, 0, 0) !important;
-        border-bottom: 1px solid rgb(var(--color-notWhite)/var(--tw-border-opacity));
+        border-top: 0px solid rgba(0, 0, 0, 0) !important;
+    }
+    article[data-comment-id*="-"] ~ div {
+        padding-top: 0 !important;
+    }
+    .gap-4.text-notBlack {
+        --tw-border-opacity: 1;
+        padding-top: 0.5em;
+        margin-top: 3px;
+        border-top: 1px solid rgb(var(--color-notWhite)/var(--tw-border-opacity));
+    }
+    .lg\:max-w-prose > .gap-4 > .text-notBlack {
+        --tw-border-opacity: 0 !important;
+        padding-top: 0;
+        margin-top: 0;
+        border-top: 0px solid rgba(0, 0, 0, 0) !important;
     }
     .-mr-4 {
         border-top: 1px solid rgba(0, 0, 0, 0) !important;
