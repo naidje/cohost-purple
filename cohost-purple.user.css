@@ -136,7 +136,11 @@
     .hover\:fill-cherry-700:hover {
         fill: rgb(var(--color-black)/var(--tw-bg-opacity));
     }
-    /*notification popover */
+    /*notification page and popover */
+    .bg-tertiary-300.flex-row {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--color-longan-300) / var(--tw-bg-opacity));
+    }
     [id^="headlessui-menu-button-\:"] .ui-open\:rotate-180 {
         color: rgb(var(--color-notBlack));
     }
