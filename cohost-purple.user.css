@@ -210,6 +210,14 @@
         --tw-text-opacity: 1;
         color: rgb(var(--color-notBlack)/var(--tw-text-opacity));
     }
+    .hover\:bg-accent:hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--color-white) / var(--tw-bg-opacity));
+    }
+    .prose-a\:text-accent :is(:where(a):not(:where([class~="not-prose"] *))) {
+        --tw-text-opacity: 1;
+        color: rgb(var(--color-notWhite) / var(--tw-text-opacity));
+    }
     /* profile switches */
     .bg-tertiary-300 {
         --tw-bg-opacity: 1;
