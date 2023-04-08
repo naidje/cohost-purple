@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Cohost Purple
 @namespace      github.com/openstyles/stylus
-@version        1.2.0
+@version        1.2.1
 @description    A purple userstyle for cohost.org
 @author         naidje
 ==/UserStyle== */
@@ -202,6 +202,10 @@
         --tw-border-opacity: 1;
         border-color: rgb(var(--color-white)/var(--tw-border-opacity)) !important;
     }
+    .text-accent {
+        --tw-text-opacity: 1;
+        color: rgb(var(--color-notWhite) / var(--tw-text-opacity));
+    }
     .hover\:text-text:hover {
         --tw-text-opacity: 1;
         color: rgb(var(--color-notBlack)/var(--tw-text-opacity));
@@ -212,7 +216,7 @@
         background-color: rgb(var(--color-black) / var(--tw-bg-opacity));
     }
     .text-foreground {
-          --tw-text-opacity: 1;
+        --tw-text-opacity: 1;
         color: rgb(var(--color-notWhite)/var(--tw-text-opacity)) !important;
     }
     /* markdown page text */
@@ -370,7 +374,7 @@
         --tw-text-opacity: 1;
         color: rgb(var(--color-green)/var(--tw-text-opacity)) !important;
     }
-/*    .text-foreground {
+    /*    .text-foreground {
         --tw-text-opacity: 1;
         color: rgb(var(--color-notBlack)/var(--tw-text-opacity)) !important;
     } */
@@ -647,9 +651,8 @@
     }
     .lg\:hover\:text-sidebarAccent:hover {
         --tw-text-opacity: 1;
-        
         text-decoration: underline;
-    } 
+    }
     .hover\:bg-cherry-600:hover {
         --tw-bg-opacity: 1;
         background-color: rgb(var(--color-compose-button-400)/var(--tw-bg-opacity));
