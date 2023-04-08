@@ -459,13 +459,13 @@
     @media (min-width: 1024px) {
         .hover\:border-accent:hover {
             --tw-border-opacity: 1;
-            border-color: rgb(var(--color-notBlack)/var(--tw-border-opacity)) !important;
+            border-color: rgb(var(--color-longan-300)/var(--tw-border-opacity)) !important;
         }
     }
     @media (min-width: 1024px) {
         .hover\:text-accent:hover {
             --tw-text-opacity: 1;
-            color: rgb(var(--color-notBlack)/var(--tw-text-opacity)) !important;
+            color: rgb(var(--color-longan-300)/var(--tw-text-opacity)) !important;
         }
     }
     .hover\:border-accent:hover {
