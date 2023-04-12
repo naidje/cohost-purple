@@ -435,7 +435,7 @@
             fill: rgb(var(--color-sidebar-accent)) !important;
         }
     }
-    .fill-sidebarAccent {
+    .fill-accent {
         fill: rgb(var(--color-compose-button-600));
     }
     @media (min-width: 1024px) {
