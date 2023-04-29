@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Cohost Purple
 @namespace      github.com/openstyles/stylus
-@version        1.2.1
+@version        1.2.2
 @description    A purple userstyle for cohost.org
 @author         naidje
 ==/UserStyle== */
@@ -25,6 +25,7 @@
         /* ^ original 69420 666 66 jk its black. 0 0 0 */
         --color-green: 50 210 120;
         --color-red: 190 100 200;
+        --color-tertiary-300: 160 130 210;
         /* and more */
         --color-compose-button-600: 115 80 160;
         --color-compose-button-400: 135 100 200;
@@ -89,9 +90,7 @@
         background: rgb(var(--color-longan-300));
     }
     /* various types of text */
-    .text-notBlack,
-    .prose,
-    .prose-stone {
+    .text-notBlack, .prose, .prose-stone {
         color: rgb(var(--color-notBlack)/var(--tw-text-opacity));
         --tw-prose-headings: rgb(var(--color-notBlack));
         --tw-prose-bold: rgb(var(--color-notBlack));
@@ -137,6 +136,58 @@
         fill: rgb(var(--color-black)/var(--tw-bg-opacity));
     }
     /*notification page and popover */
+    #conotifpopover {
+        --np-accent: var(--color-cherry);
+        --np-accent-fg: var(--color-notWhite);
+        --np-notif-accent: var(--color-cherry);
+        --np-notif-bg: var(--color-white);
+        --np-notif-fg: var(--color-notBlack);
+        --np-notif-divider: var(--color-notWhite);
+        --np-notif-target-fg: var(--color-gray-600);
+        --np-date-header: var(--color-tertiary-300);
+        --np-date-header-fg: var(--color-notBlack);
+        --np-popover-bg: var(--color-sidebar-bg);
+        --np-popover-outline: var(--color-notWhite);
+        --np-popover-fg: var(--color-notBlack) !important;
+        --np-button-bg: var(--color-foreground);
+        --np-button-active-bg: var(--color-foreground-700);
+        --np-button-fg: var(--color-notWhite);
+        --np-cohost-shadow-light: 0px 4px 5px rgba(25, 25, 25, 0.14), 0px 1px 10px rgba(25, 25, 25, .12), 0px 2px 4px rgba(0, 0, 0, .2);
+        --np-cohost-shadow-dark: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, .12), 0px 2px 4px rgba(0, 0, 0, .2);
+    }
+    #conotifpopover .np-header .np-header-button svg {
+        color: rgb(var(--np-popover-fg));
+    }
+    #conotifpopover .np-header .np-header-button.np-is-active svg {
+        color: rgb(var(--np-button-fg));
+    }
+    #conotifpopover .np-notification .np-inner-notif .np-grouped-notif-projects .np-collapsed-container .np-expand-button svg {
+        color: rgb(var(--np-popover-fg));
+    }
+    #conotifpopover .np-popover-arrow::before {
+        content: '';
+        position: absolute;
+        right: 100%;
+        top: 0;
+        width: 16px;
+        height: 16px;
+        border: 8px solid transparent;
+        border-right-color: transparent;
+        border-right-color: rgb(var(--np-popover-outline));
+        box-sizing: border-box;
+    }
+    #conotifpopover .np-popover-arrow::after {
+        content: '';
+        position: absolute;
+        right: 100%;
+        top: 1px;
+        width: 14px;
+        height: 14px;
+        border: 7px solid transparent;
+        border-right-color: transparent;
+        border-right-color: rgb(var(--color-white));
+        box-sizing: border-box;
+    }
     .bg-tertiary-300.flex-row {
         --tw-bg-opacity: 1;
         background-color: rgb(var(--color-longan-300) / var(--tw-bg-opacity));
@@ -144,6 +195,7 @@
     [id^="headlessui-menu-button-\:"] .ui-open\:rotate-180 {
         color: rgb(var(--color-notBlack));
     }
+    /* notification popover old version*/
     .conotifs-popover .inner-grouped-expand-button {
         color: rgb(var(--color-notBlack));
     }
@@ -232,8 +284,7 @@
         color: rgb(var(--color-notWhite)/var(--tw-text-opacity)) !important;
     }
     /* markdown page text */
-    .bg-notWhite,
-    .px-3 {
+    .bg-notWhite, .px-3 {
         color: rgb(var(--color-notBlack)/var(--tw-text-opacity));
     }
     button.header-page-control {
@@ -245,9 +296,7 @@
         color: rgb(var(--color-gray-800)/var(--tw-text-opacity));
     }
     /* post header */
-    .bg-notWhite,
-    input[type=checkbox],
-    .kp {
+    .bg-notWhite, input[type=checkbox], .kp {
         background-color: rgb(var(--color-white)/var(--tw-bg-opacity));
     }
     /* post seperators */
@@ -278,13 +327,11 @@
         background-color: transparent;
     }
     /* footer button default color */
-    article footer div div.justify-end svg,
-    article footer div div.gap-1 svg {
+    article footer div div.justify-end svg, article footer div div.gap-1 svg {
         color: rgb(var(--color-white)/var(--tw-bg-opacity));
     }
     /* footer button hover color */
-    article footer div div.justify-end svg:hover,
-    article footer div div.gap-1 svg:hover {
+    article footer div div.justify-end svg:hover, article footer div div.gap-1 svg:hover {
         color: rgb(var(--color-notWhite)/var(--tw-bg-opacity));
     }
     /* footer button active color */
@@ -294,8 +341,7 @@
     input[type=checkbox] {
         color: rgb(var(--color-notBlack)/var(--tw-text-opacity));
     }
-    .text-notWhite,
-    .hover\:text-notWhite:hover {
+    .text-notWhite, .hover\:text-notWhite:hover {
         color: rgb(var(--color-notWhite)/var(--tw-text-opacity));
     }
     .kbp {
@@ -306,8 +352,7 @@
         color: rgb(var(--color-gray-800));
         background: rgb(var(--color-gray-300));
     }
-    a.kb.kbl,
-    a.tw._f1m {
+    a.kb.kbl, a.tw._f1m {
         color: rgb(var(--color-gray-800));
     }
     .bg-opacity-90 {
@@ -323,26 +368,10 @@
     .border-notBlack {
         border-color: rgb(var(--color-notBlack)/var(--tw-border-opacity));
     }
-    .bg-notBlack,
-    .hover\:bg-notBlack:hover {
+    .bg-notBlack, .hover\:bg-notBlack:hover {
         background-color: rgb(var(--color-black)/var(--tw-bg-opacity));
     }
-    .bg-white,
-    [type=text],
-    [type=email],
-    [type=url],
-    [type=password],
-    [type=number],
-    [type=date],
-    [type=datetime-local],
-    [type=month],
-    [type=search],
-    [type=tel],
-    [type=time],
-    [type=week],
-    [multiple],
-    textarea,
-    select {
+    .bg-white, [type=text], [type=email], [type=url], [type=password], [type=number], [type=date], [type=datetime-local], [type=month], [type=search], [type=tel], [type=time], [type=week], [multiple], textarea, select {
         background-color: rgb(var(--color-white)/var(--tw-bg-opacity));
         color: rgb(var(--color-notBlack)/var(--tw-text-opacity));
     }
@@ -359,12 +388,10 @@
     .text-white {
         color: rgb(var(--color-white)/var(--tw-text-opacity));
     }
-    .text-black,
-    .text-cherry-900 {
+    .text-black, .text-cherry-900 {
         color: rgb(var(--color-notBlack)/var(--tw-text-opacity));
     }
-    .kp .th,
-    .kp .kd {
+    .kp .th, .kp .kd {
         color: rgb(var(--color-black))
     }
     .border-gray-300 {
@@ -513,10 +540,7 @@
         }
     }
     /* sign out button */
-    button,
-    [type="button"],
-    [type="reset"],
-    [type="submit"] {
+    button, [type="button"], [type="reset"], [type="submit"] {
         color: rgb(var(--color-white)/var(--tw-text-opacity));
     }
     .hover\:text-cherry:hover {
@@ -695,8 +719,7 @@
         --tw-border-opacity: 1;
         border-color: rgb(var(--color-black)/var(--tw-border-opacity));
     }
-    .hover\:bg-cherry:hover,
-    .active\:bg-cherry-600:active {
+    .hover\:bg-cherry:hover, .active\:bg-cherry-600:active {
         --tw-bg-opacity: 1;
         background-color: rgb(var(--color-notBlack)/var(--tw-bg-opacity));
     }
