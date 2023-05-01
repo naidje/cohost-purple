@@ -144,7 +144,7 @@
         --np-notif-fg: var(--color-notBlack);
         --np-notif-divider: var(--color-notWhite);
         --np-notif-target-fg: var(--color-gray-600);
-        --np-date-header: var(--color-tertiary-300);
+        --np-date-header: var(--color-tertiary-300) !important;
         --np-date-header-fg: var(--color-notBlack);
         --np-popover-bg: var(--color-sidebar-bg);
         --np-popover-outline: var(--color-notWhite);
@@ -155,6 +155,7 @@
         --np-cohost-shadow-light: 0px 4px 5px rgba(25, 25, 25, 0.14), 0px 1px 10px rgba(25, 25, 25, .12), 0px 2px 4px rgba(0, 0, 0, .2);
         --np-cohost-shadow-dark: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, .12), 0px 2px 4px rgba(0, 0, 0, .2);
     }
+    
     #conotifpopover .np-header .np-header-button svg {
         color: rgb(var(--np-popover-fg));
     }
