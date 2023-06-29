@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Cohost Purple
 @namespace      github.com/openstyles/stylus
-@version        1.2.2
+@version        1.2.3
 @description    A purple userstyle for cohost.org
 @author         naidje
 ==/UserStyle== */
@@ -53,6 +53,7 @@
         /* ^ sidebar colors */
         --color-highlight: 245 245 255;
         /* ^ mouseover highlight color for notifications page */
+        --color-askbox: 230 220 255;
     }
     /* login button */
     #login-form .hover\:bg-foreground-600:hover {
@@ -310,6 +311,14 @@
     .from-white {
         --tw-gradient-from: rgb(var(--color-white));
         --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(var(--color-white) / 0));
+    }
+    /* asks */
+    .m-3.grid {
+        background-color: rgb(var(--color-askbox)/var(--tw-bg-opacity));        
+    }
+    .m-3.border-strawberry-400 {
+        --tw-border-opacity: 1;
+        border-color: rgb(var(--color-mango-100)/var(--tw-bg-opacity));
     }
     /* post footer bg */
     .mr-2 {
