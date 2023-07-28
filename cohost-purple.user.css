@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Cohost Purple
 @namespace      github.com/openstyles/stylus
-@version        1.2.3
+@version        1.2.4
 @description    A purple userstyle for cohost.org
 @author         naidje
 ==/UserStyle== */
@@ -156,7 +156,6 @@
         --np-cohost-shadow-light: 0px 4px 5px rgba(25, 25, 25, 0.14), 0px 1px 10px rgba(25, 25, 25, .12), 0px 2px 4px rgba(0, 0, 0, .2);
         --np-cohost-shadow-dark: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, .12), 0px 2px 4px rgba(0, 0, 0, .2);
     }
-    
     #conotifpopover .np-header .np-header-button svg {
         color: rgb(var(--np-popover-fg));
     }
@@ -314,11 +313,21 @@
     }
     /* asks */
     .m-3.grid {
-        background-color: rgb(var(--color-askbox)/var(--tw-bg-opacity));        
+        background-color: rgb(var(--color-askbox)/var(--tw-bg-opacity));
     }
     .m-3.border-strawberry-400 {
         --tw-border-opacity: 1;
         border-color: rgb(var(--color-mango-100)/var(--tw-bg-opacity));
+    }
+    /* audio player */
+    .audio-controls.accent-mango {
+        accent-color: rgb(var(--color-longan)/var(--tw-bg-opacity));
+    }
+    .flex-1, .text-xs {
+        color: rgb(var(--color-notWhite) / var(--tw-text-opacity));
+    }
+    a[title="download"] {
+        color: rgb(var(--color-notWhite) / var(--tw-text-opacity));
     }
     /* post footer bg */
     .mr-2 {
