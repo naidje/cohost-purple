@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Cohost Purple
 @namespace      github.com/openstyles/stylus
-@version        1.2.4
+@version        1.2.5
 @description    A purple userstyle for cohost.org
 @author         naidje
 ==/UserStyle== */
@@ -334,6 +334,19 @@
     }
     a[title="download"] {
         color: rgb(var(--color-notWhite) / var(--tw-text-opacity));
+    }
+    .gyoza-audio-enhance-container .border-longan.bg-longan {
+        border-color: rgb(var(--color-notBlack)/var(--tw-bg-opacity)) !important;
+        background-color: rgb(var(--color-notBlack)/var(--tw-bg-opacity)) !important;
+    }
+    .gyoza-audio-enhance-container input[type="range"] {
+        accent-color: rgb(var(--color-longan)/var(--tw-bg-opacity));
+    }
+    .gyoza-audio-enhance-inner .text-gray-500 {
+        color: rgb(var(--color-notWhite) / var(--tw-text-opacity)) !important;
+    }
+    .gyoza-audio-enhance-inner .text-cherry {
+        color: rgb(var(--color-longan) / var(--tw-text-opacity)) !important;
     }
     /* post footer bg */
     .mr-2 {
