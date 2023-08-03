@@ -4,6 +4,7 @@
 @version        1.2.5
 @description    A purple userstyle for cohost.org
 @author         naidje
+@updateURL      https://github.com/naidje/cohost-purple/raw/main/cohost-purple.user.css
 ==/UserStyle== */
 @-moz-document domain("cohost.org") {
     :root {
