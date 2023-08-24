@@ -138,6 +138,7 @@
         fill: rgb(var(--color-black)/var(--tw-bg-opacity));
     }
     /*notification page and popover */
+    
     #conotifpopover {
         --np-accent: var(--color-cherry);
         --np-accent-fg: var(--color-notWhite);
@@ -166,7 +167,7 @@
     #conotifpopover .np-notification .np-inner-notif .np-grouped-notif-projects .np-collapsed-container .np-expand-button svg {
         color: rgb(var(--np-popover-fg));
     }
-    time.np-date-label.font-league {
+    time.font-league {
         color: rgb(var(--color-notBlack) / var(--tw-text-opacity))!important;
     }
     .flex-wrap {
