@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Cohost Purple
 @namespace      github.com/openstyles/stylus
-@version        1.2.6
+@version        1.2.7
 @description    A purple userstyle for cohost.org
 @author         naidje
 @updateURL      https://github.com/naidje/cohost-purple/raw/main/cohost-purple.user.css
@@ -166,7 +166,7 @@
     #conotifpopover .np-notification .np-inner-notif .np-grouped-notif-projects .np-collapsed-container .np-expand-button svg {
         color: rgb(var(--np-popover-fg));
     }
-    .font-league {
+    time.np-date-label.font-league {
         color: rgb(var(--color-notBlack) / var(--tw-text-opacity))!important;
     }
     .flex-wrap {
