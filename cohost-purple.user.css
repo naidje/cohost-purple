@@ -1,10 +1,9 @@
 /* ==UserStyle==
 @name           Cohost Purple
 @namespace      github.com/openstyles/stylus
-@version        1.2.7
+@version        1.3.0
 @description    A purple userstyle for cohost.org
 @author         naidje
-@updateURL      https://github.com/naidje/cohost-purple/raw/main/cohost-purple.user.css
 ==/UserStyle== */
 @-moz-document domain("cohost.org") {
     :root {
@@ -138,7 +137,6 @@
         fill: rgb(var(--color-black)/var(--tw-bg-opacity));
     }
     /*notification page and popover */
-    
     #conotifpopover {
         --np-accent: var(--color-cherry);
         --np-accent-fg: var(--color-notWhite);
@@ -258,6 +256,83 @@
         bottom: 0;
         background: linear-gradient( to right, rgb(var(--color-white)/0.00) 0%, rgb(var(--color-white)/0.04) 10%, rgb(var(--color-white)/0.08) 20%, rgb(var(--color-white)/0.14) 30%, rgb(var(--color-white)/0.24) 40%, rgb(var(--color-white)/0.30) 45%, rgb(var(--color-white)/0.38) 50%, rgb(var(--color-white)/0.45) 55%, rgb(var(--color-white)/0.53) 60%, rgb(var(--color-white)/0.61) 65%, rgb(var(--color-white)/0.70) 70%, rgb(var(--color-white)/0.85) 80%, rgb(var(--color-white)/0.96) 90%, rgb(var(--color-white)/1.00) 100%);
     }
+    /* following page */
+    .items-left.flex-1 {
+        color: rgb(var(--color-notBlack) / var(--tw-text-opacity));
+    }
+    time.text-cherry-600 {
+        --tw-text-opacity: 1;
+        color: rgb(var(--color-notBlack)/var(--tw-text-opacity));
+    }
+    /* profile switches */
+    button[id^="headlessui-switch-\:r"].bg-cherry-800 {
+        background-color: rgb(var(--color-black) / var(--tw-bg-opacity));
+        color: rgb(var(--color-longan-300)/var(--tw-text-opacity));
+    }
+    button[id^="headlessui-switch-\:r"].bg-cherry-500 {
+        background-color: rgb(var(--color-notBlack)/var(--tw-text-opacity));
+        color: rgb(var(--color-notWhite)/var(--tw-text-opacity));
+    }
+    button[id^="headlessui-switch-\:r"].hover\:bg-cherry-600:hover {
+        background-color: rgb(var(--color-compose-button-400)/var(--tw-text-opacity));
+        color: rgb(var(--color-notBlack)/var(--tw-text-opacity));
+    }
+    /* ask button */
+    a.bg-cherry-500 {
+        background-color: rgb(var(--color-notBlack)/var(--tw-text-opacity));
+        color: rgb(var(--color-notWhite)/var(--tw-text-opacity));
+    }
+    a.hover\:bg-cherry-600:hover {
+        background-color: rgb(var(--color-compose-button-400)/var(--tw-text-opacity));
+        color: rgb(var(--color-notBlack)/var(--tw-text-opacity));
+    }
+    /* manage button */
+    button[id^="headlessui-menu-button-\:r"].bg-cherry-500 {
+        background-color: rgb(var(--color-notBlack)/var(--tw-text-opacity));
+        color: rgb(var(--color-notWhite)/var(--tw-text-opacity));
+    }
+    button[id^="headlessui-menu-button-\:r"].hover\:bg-cherry-600:hover {
+        background-color: rgb(var(--color-compose-button-400)/var(--tw-text-opacity));
+        color: rgb(var(--color-notBlack)/var(--tw-text-opacity));
+    }
+    /* scrollbar */
+    .styled-scrollbars-light {
+        scrollbar-color: rgb(var(--color-compose-button-400)) rgb(var(--color-notWhite));
+    }
+    /* refresh button */
+    button.rounded-lg.text-base.bg-longan-300 {
+        background-color: rgb(var(--color-notBlack)/var(--tw-bg-opacity));
+        color: rgb(var(--color-white)/var(--tw-text-opacity));
+    }
+    button.rounded-lg.text-base.hover\:bg-longan-400:hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--color-compose-button-400)/var(--tw-text-opacity));
+        color: rgb(var(--color-white)/var(--tw-text-opacity));
+    }
+    svg.text-cherry.-right-1 {
+        color: rgb(var(--color-longan-300)/var(--tw-text-opacity));
+    }
+    /* sorting */
+    button[id^="headlessui-listbox-button-\:R6ract\:"] > .bg-longan-300 {
+        background-color: rgb(var(--color-notBlack)/var(--tw-bg-opacity));
+        color: rgb(var(--color-white)/var(--tw-text-opacity));
+    }
+    .group:hover .group-hover\:bg-longan-400 {
+        background-color: rgb(var(--color-compose-button-400)/var(--tw-text-opacity));
+        color: rgb(var(--color-white)/var(--tw-text-opacity));
+    }
+    ul[id^="headlessui-listbox-options-\:Rlmmct\:"] > li[id^="headlessui-listbox-option-\:r"] > button {
+        color: rgb(var(--color-notBlack)/var(--tw-text-opacity)) !important;
+    }
+    li[id^="headlessui-listbox-option-\:r"].hover\:bg-longan-300:hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--color-notWhite)/var(--tw-bg-opacity));
+    }
+    /* sidebar icon */
+    .text-cherry-500 {
+        --tw-text-opacity: 1;
+        color: rgb(var(--color-notBlack)/var(--tw-text-opacity));
+    }
     /* profile sidebar text */
     .prose-stone {
         color: rgb(var(--color-notWhite)/var(--tw-text-opacity));
@@ -284,9 +359,15 @@
         color: rgb(var(--color-notWhite) / var(--tw-text-opacity));
     }
     /* profile switches */
-    .bg-tertiary-300 {
-        --tw-bg-opacity: 1;
-        background-color: rgb(var(--color-black) / var(--tw-bg-opacity));
+    button[id^="headlessui-switch-\:r"].bg-cherry-300 {
+        background-color: rgb(var(--color-black)/var(--tw-text-opacity));
+    }
+    button[id^="headlessui-switch-\:r"] > .bg-cherry-500 {
+        background-color: rgb(var(--color-notBlack)/var(--tw-text-opacity));
+    }
+    .text-cherry-700 {
+        --tw-text-opacity: 1;
+        color: rgb(var(--color-longan-300)/var(--tw-text-opacity));
     }
     .text-foreground {
         --tw-text-opacity: 1;
