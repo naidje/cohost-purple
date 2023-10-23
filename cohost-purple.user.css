@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Cohost Purple
 @namespace      github.com/openstyles/stylus
-@version        1.3.1
+@version        1.3.2
 @description    A purple userstyle for cohost.org
 @author         naidje
 ==/UserStyle== */
@@ -262,6 +262,10 @@
     }
     time.text-cherry-600 {
         --tw-text-opacity: 1;
+        color: rgb(var(--color-notBlack)/var(--tw-text-opacity));
+    }
+    /* load more button */
+    button.gap-3 {
         color: rgb(var(--color-notBlack)/var(--tw-text-opacity));
     }
     /* profile switches */
