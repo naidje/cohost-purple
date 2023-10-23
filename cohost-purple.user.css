@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Cohost Purple
 @namespace      github.com/openstyles/stylus
-@version        1.3.0
+@version        1.3.1
 @description    A purple userstyle for cohost.org
 @author         naidje
 ==/UserStyle== */
@@ -412,7 +412,7 @@
     .audio-controls.accent-mango {
         accent-color: rgb(var(--color-longan)/var(--tw-bg-opacity));
     }
-    .flex-1, .text-xs {
+    .bg-notBlack > .flex > .flex-1, .text-xs {
         color: rgb(var(--color-notWhite) / var(--tw-text-opacity));
     }
     a[title="download"] {
@@ -459,7 +459,7 @@
     article footer div div.justify-end svg.text-cherry {
         color: rgb(var(--color-red)/var(--tw-bg-opacity));
     }
-    input[type=checkbox] {
+    input[type="checkbox"] {
         color: rgb(var(--color-notBlack)/var(--tw-text-opacity));
     }
     .text-notWhite, .hover\:text-notWhite:hover {
@@ -884,5 +884,15 @@
     }
     .hover\:text-composeButton:hover {
         fill: rgb(var(--color-compose-button-400)/var(--tw-text-opacity));
+    }
+    /* settings page */
+    button.rounded.border-cherry.border.p-2.cursor-pointer.bg-strawberry-100.text-left {
+        color: rgb(var(--color-notBlack)/var(--tw-text-opacity));
+    }
+    input[type="checkbox"]:checked, [type="radio"]:checked {
+        background-color: rgb(var(--color-notBlack)/var(--tw-text-opacity));
+    }
+    [type="checkbox"]:checked:hover, [type="checkbox"]:checked:focus, [type="radio"]:checked:hover, [type="radio"]:checked:focus {
+        background-color: rgb(var(--color-longan-300)/var(--tw-text-opacity));
     }
 }
